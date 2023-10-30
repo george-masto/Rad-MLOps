@@ -9,8 +9,8 @@ nav:
     - 'License': 'index_1.md'
     - 'Release Notes': 'index_1.md'
   - Blog:
-    - 'Post-Deployment Surveillance': 'post-market-surveillance.md'
-    - 'Another Section': 'post-market-surveillance.md'
+    - 'Post-Deployment Surveillance': 'post-deployment-surveillance/post-deployment-surveillance.md'
+    - 'Another Section': 'index_1.md'
 
 theme:
   name: material
@@ -49,6 +49,7 @@ extra:
       link: https://www.linkedin.com/in/georgemastorakos/
 
 markdown_extensions:
+  - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
