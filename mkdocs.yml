@@ -10,7 +10,7 @@ nav:
     - 'Release Notes': 'index_1.md'
   - Blog:
     - 'Post-Deployment Surveillance': 'post-deployment-surveillance/post-deployment-surveillance.md'
-    - 'Another Section': 'index_1.md'
+    - 'Another Section': 'post-deployment-surveillance/gpt4example.md'
 
 theme:
   name: material

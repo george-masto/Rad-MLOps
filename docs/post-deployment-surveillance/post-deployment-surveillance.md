@@ -11,20 +11,30 @@ This post is for some humans.
 ### Model Drift
 There are two main types of model drift: data drift and concept drift.
 #### Data Drift
-Changes in distritution of **serving data** relative to training data over time.
+Changes in distribution of **serving data** relative to training data over time.
 
 Example: 
 - Scan Parameters are adjusted due to changes in scanner hardware, or scan time contraints.   
  
 Detecting drift:
 
-- Define what subgroups to assess (e.g. gender, age, image slice thickness), 
+- Define which subgroups to assess (e.g. gender, age, image slice thickness)
+  
+    - difference in distribution of parameters between outliers and rest of data
+      - split dataset into two, four, etc. --> looking at subdistribution difference of a given variable
+      - k-means clustering across all parameters and performance
+    - this can help flag serving data that may yield subpar performance
+    - this also helps with targeted data sharing asks - help define data requests from users, if an option
 
-- Define metric(s) and threshold(s) to measure and detect drft. 
+- Define metric(s) and threshold(s) to measure and detect drift.
+    
+    - e.g. distribution of Female:Male in training data is significantly different than that seen in serving data 
 
 - Define what actions to take if drift is detected. 
 
-    - Determine whether drift affects serving performance by reaching out to users. Obtain new training data from impacted users if possible. 
+    - Determine whether drift affects serving performance by reaching out to users.
+     
+    - Obtain new data that doesn't overlap with current model's training distribution (e.g. males under 50) from impacted users, if possible.
 
 - Anticipate most likely situations drift can occur
 
@@ -39,7 +49,8 @@ Example:
 - the standard definition of an edema label that was applied to brain tumor MRIs changes to include/not include certain positive FLAIR signal in a specific location.
 - microhemorrhages are re-classified or sub-classified based on size, and this becomes the standard in T2*GRE/SWI image reading.
 
-**How might you overcome concept drift?** Depending on the specific scenario and extent of definition change, adapting to concept drift is possible. For example, in the case of the microhemorrhage mentioned above, perhaps lesions below a maximum diameter of 5mm are sub-classified as "small" and physicians may expect this from any image detection model applied to microhemorrhages. Software can be designed to detect segmentation masks that fall into this "new" definition or class and apply this label at a post-inference step. Eventually, model retraining / tuning may be necessary to maintain performance if concepts drift beyond the scope of what simple post-inference logic can fix.
+**How might you overcome concept drift?**
+Depending on the specific scenario and extent of definition change, adapting to concept drift may be possible. For example, in the case of the microhemorrhage mentioned above, perhaps lesions below a certain diameter of 5mm are sub-classified as "small" and physicians may expect this from any image detection model applied to microhemorrhages. Software can be designed to detect segmentation masks that fall into this "new" definition or class and apply this label at a post-inference step. Eventually, model retraining / tuning may be necessary to maintain performance if concepts drift beyond the scope of what simple post-inference logic can fix.
 
 E.g. 
 
