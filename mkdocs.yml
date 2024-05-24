@@ -9,6 +9,7 @@ nav:
     - 'License': 'index_1.md'
     - 'Release Notes': 'index_1.md'
   - Blog:
+    - 'Overview of MLOps': 'introduction/overview.md'
     - 'Post-Deployment Surveillance': 'post-deployment-surveillance/post-deployment-surveillance.md'
     - 'Another Section': 'post-deployment-surveillance/gpt4example.md'
 
