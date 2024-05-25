@@ -1,17 +1,17 @@
 site_name: MLOps in Medical Imaging
 # site_url: https://james-willett.github.io/mkdocs-material-youtube-tutorial/
 nav:
-  - Home: 'index.md'
+  - Home: 'home.md'
   - User Guide:
     - 'Writing your docs': 'index_1.md'
     - 'Styling your docs': 'index_1.md'
   - About:
-    - 'License': 'index_1.md'
-    - 'Release Notes': 'index_1.md'
+    - 'License': 'home.md'
+    - 'Release Notes': 'home.md'
   - Blog:
-    - 'Overview of MLOps': 'introduction/overview.md'
-    - 'Post-Deployment Surveillance': 'post-deployment-surveillance/post-deployment-surveillance.md'
-    - 'Another Section': 'post-deployment-surveillance/gpt4example.md'
+    - 'Overview of MLOps': 'blog/introduction/overview.md'
+    - 'Post-Deployment Surveillance': 'blog/post-deployment-surveillance/post-deployment-surveillance.md'
+    - 'Another Section': 'blog/post-deployment-surveillance/gpt4example.md'
 
 theme:
   name: material
@@ -68,4 +68,4 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 copyright: |
-  &copy; 2023 <a href="https://github.com/georgemasto/MLOps-Medical-Imaging" target="_blank" rel="noopener"> <br> George M. Mastorakos <br> Robert X. Smith</a>
+  &copy; 2024 <a href="https://github.com/georgemasto/MLOps-Medical-Imaging" target="_blank" rel="noopener"> <br> George M. Mastorakos <br> Robert X. Smith</a>
