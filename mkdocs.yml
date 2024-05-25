@@ -1,13 +1,10 @@
 site_name: MLOps in Medical Imaging
 # site_url: https://james-willett.github.io/mkdocs-material-youtube-tutorial/
 nav:
-  - Home: 'home.md'
-  - User Guide:
-    - 'Writing your docs': 'index_1.md'
-    - 'Styling your docs': 'index_1.md'
+  - Home: 'index.md'
   - About:
-    - 'License': 'home.md'
-    - 'Release Notes': 'home.md'
+    - 'License': 'index_1.md'
+    - 'Release Notes': 'index_2.md'
   - Blog:
     - 'Overview of MLOps': 'blog/introduction/overview.md'
     - 'Post-Deployment Surveillance': 'blog/post-deployment-surveillance/post-deployment-surveillance.md'

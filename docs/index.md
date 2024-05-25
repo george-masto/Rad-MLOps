@@ -1,67 +1,30 @@
-# Welcome to MkDocs
+# **Rad-MLOps**
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<figure markdown>
+  ![Rad MLOps](/logo.png){ width="300" }
+</figure>
 
-## Commands
+# Who We Are
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+We are a dynamic duo: a condensed matter physics PhD turned deep-learning medical imaging scientist, and an MD turned AI solutions architect. With over 10 years of combined industry experience, we aim to document our journey of implementing MLOps in medical imaging the right way.
 
-## Project layout
+# Mission
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Our mission is to teach you how to deploy and monitor medical imaging ML models within regulated environments using MLOps best practices.
 
-## Code Annotation Examples
+# Goals
 
-Testing writing `code` here.
+1. Develop strategies for productionizing ML models in regulated environments, focusing on MLOps best practices.
+2. Understand the do’s and don’ts of MLOps within various medical regulatory constraints (e.g., FDA, CE).
+3. Identify and provide solutions to common roadblocks related to the CI/CD of ML solutions for medical imaging tasks.
+4. Organize code snippets and scripts showcasing common libraries and tools used in medical imaging MLOps.
+5. Share these learnings and tips with our community here!
 
-```
-Testing writing code block here
+# Key Concepts
 
-```
-
-Testing `py` code here
-
-```py
-import tensorflow as tf
-def just_a_function():
-    ASSET_DIR = './'
-    asset = 'test'
-```
-adding file name as title
-
-```py title='this_is_filename.py'
-import tensorflow as tf
-def just_a_function():
-    ASSET_DIR = './'
-    asset = 'test'
-```
-adding line numbers
-
-```py title='this_is_filename.py' linenums="1"
-import tensorflow as tf
-def just_a_function():
-    ASSET_DIR = './'
-    asset = 'test'
-```
-Highlighting lines
-
-```py title='this_is_filename.py' linenums="1" hl_lines="2 3"
-import tensorflow as tf
-def just_a_function():
-    ASSET_DIR = './'
-    asset = 'test'
-```
-
-Emojis
-
-:smile:
-
-:fontawesome-regular-face-laugh-wink:
-
-:octicons-heart-fill-24:{ .heart }
+1. Data Management
+2. CI/CD (Continuous Integration/Continuous Deployment)
+3. Automated Testing
+4. Model Training & Testing
+5. Model Deployment
+6. Model Monitoring
