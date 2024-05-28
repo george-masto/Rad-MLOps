@@ -11,13 +11,13 @@ In the context of medical imaging, precision and reliability are not just techni
 
 <div style="display: flex; justify-content: space-between;">
     <div style="flex: 1; margin-right: 10px; padding: 10px; border: 0px solid #ccc; background-color: #f0f0f0;">
-        <strong>🎯 Precision vs. Accuracy:</strong> While accuracy measures the overall correctness of a model, precision specifically targets the rate of false positives, which is crucial in medical imaging to prevent unwarranted alarms. For example, in detecting tumors, high precision ensures that healthy tissue is not mistakenly flagged as cancerous, avoiding undue stress and further invasive tests for patients.
+        <strong>🎯 Precision vs. Accuracy</strong><br />While accuracy measures the overall correctness of a model, precision specifically targets the rate of false positives, which is crucial in medical imaging to prevent unwarranted alarms. For example, in detecting tumors, high precision ensures that healthy tissue is not mistakenly flagged as cancerous, avoiding undue stress and further invasive tests for patients.
     </div>
     <div style="flex: 1; margin-center: 10px; padding: 10px; border: 0px solid #ccc; background-color: #f0f0f0;">
-        <strong>🛡️ Reliability vs. Inference Time:</strong> Although fast inference time is valuable for real-time diagnosis, it's secondary to ensuring models consistently produce reliable results. Reliable models minimize the risk of fluctuating predictions, which could lead to contradictory diagnoses over time, causing confusion for healthcare providers and patients alike.
+        <strong>🛡️ Reliability vs. Inference Time</strong><br />Although fast inference time is valuable for real-time diagnosis, it's secondary to ensuring models consistently produce reliable results. Reliable models minimize the risk of fluctuating predictions, which could lead to contradictory diagnoses over time, causing confusion for healthcare providers and patients alike.
     </div>
     <div style="flex: 1; margin-left: 10px; padding: 10px; border: 0px solid #ccc; background-color: #f0f0f0;">
-        <strong>⏳ Inference Time Still Matters:</strong> While reliability typically governs the effectiveness of an ML model, inference time may hold more weight in different medical contexts: such as stroke detection, where time is brain.
+        <strong>⏳ Inference Time Still Matters</strong><br />While reliability typically governs the effectiveness of an ML model, inference time may hold more weight in different medical contexts: such as stroke detection, where time is brain.
     </div>
 </div>
 
