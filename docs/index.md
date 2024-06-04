@@ -1,7 +1,7 @@
 # **Rad-MLOps**
 
 <figure markdown>
-  ![Rad MLOps](/logo.png){ width="300" }
+  ![Rad MLOps](./logo.png){ width="300" }
 </figure>
 
 # Who We Are
