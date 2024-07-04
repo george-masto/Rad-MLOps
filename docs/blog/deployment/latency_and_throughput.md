@@ -22,8 +22,34 @@ Let's consider a concrete example of latency and throughput benchmarking for a b
 ## Docker Setup:
 1. Ensure the Docker image is built with GPU support:
    ```Dockerfile
-   FROM nvidia/cuda:11.0-base
-   # ... (other Dockerfile instructions)
+    # Use NVIDIA CUDA base image
+    FROM nvidia/cuda:11.0-base
+
+    # Set working directory
+    WORKDIR /app
+
+    # Install Python and pip
+    RUN apt-get update && apt-get install -y \
+        python3 \
+        python3-pip \
+        && rm -rf /var/lib/apt/lists/*
+
+    # Install PyTorch with CUDA support
+    RUN pip3 install torch torchvision torchaudio
+
+    # Install other dependencies
+    COPY requirements.txt .
+    RUN pip3 install -r requirements.txt
+
+    # Copy model files
+    COPY model/ ./model/
+    COPY app.py .
+
+    # Expose port for the API
+    EXPOSE 8080
+
+    # Run the application
+    CMD ["python3", "app.py"]
    ```
 
 2. Run the Docker container with GPU access:
