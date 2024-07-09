@@ -7,7 +7,9 @@ nav:
     - 'Release Notes': 'index_2.md'
   - Blog:
     - 'Overview of MLOps': 'blog/introduction/overview.md'
-    - 'Deployment': 'blog/deployment/latency_and_throughput.md'
+    - Case Study:
+      - Overview: 'blog/brain_tumor_seg_overview.md'
+      - Deployment: 'blog/deployment/latency_and_throughput.md'
     - 'Post-Deployment Surveillance': 'blog/post-deployment-surveillance/post-deployment-surveillance.md'
     - 'Another Section': 'blog/post-deployment-surveillance/gpt4example.md'
 
