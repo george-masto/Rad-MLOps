@@ -10,7 +10,7 @@ nav:
     - 'Deployment': 'blog/deployment/latency_and_throughput.md'
     - 'Post-Deployment Surveillance': 'blog/post-deployment-surveillance/post-deployment-surveillance.md'
     - 'Another Section': 'blog/post-deployment-surveillance/gpt4example.md'
-    - 'Regulatory': ''
+    - 'Regulatory': 'blog/regulatory.md'
 
 theme:
   name: material
